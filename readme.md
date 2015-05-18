@@ -242,15 +242,15 @@ Now go to Main.storybaord. First, change the title label in the Master view from
 
 Select the Table View by clicking on it. Then go to Editor>Pin and select “Bottom Space to Superview”. 
 
-![Alt text](/img/autolayout-pins)
+![Alt text](/img/autolayout-pins.png)
 
 Do this for “Top Space to Superview”, “Trailing Space to Superview”, and “Leading Space to Superview”. Remember to select the Table View before adding each pin. If done correctly, you’ll get a nice blue outline around your Table View, indicating that your Auto Layout pins were placed properly.
 
-![Alt text](/img/autolayout)
+![Alt text](/img/autolayout.png)
 
 Then, add a Table View Cell to the Table View
 
-![Alt text](/img/Table-Cell)
+![Alt text](/img/Table-Cell.png)
 
 Now, switch to the Assistant Editor and have your right pane display DetailViewController.h. Go ahead and delete the detailDiscriptionLabel. Hold down control and click and drag from the Table View to your interface to add a UITableView property. We’re going to display the selected contact’s numbers here, so give the table an appropriate name, such as numberTable.
 
