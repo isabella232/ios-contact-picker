@@ -139,8 +139,8 @@
 
 -(void)initSinchClient
 {
-    _client = [Sinch clientWithApplicationKey:@"a69b6373-a67b-4de5-906f-0b6e43580187"
-                            applicationSecret:@"aU9oIYRpi06Ku850EWjd3A=="
+    _client = [Sinch clientWithApplicationKey:@""
+                            applicationSecret:@""
                               environmentHost:@"sandbox.sinch.com"
                                        userId:@"phoneCaller"];
     _client.callClient.delegate = self;
