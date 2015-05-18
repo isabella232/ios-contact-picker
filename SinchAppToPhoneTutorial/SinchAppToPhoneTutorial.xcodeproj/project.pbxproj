@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29CEE2241B098273007F07C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE2231B098273007F07C2 /* main.m */; };
+		29CEE2271B098273007F07C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE2261B098273007F07C2 /* AppDelegate.m */; };
+		29CEE22A1B098273007F07C2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE2291B098273007F07C2 /* MasterViewController.m */; };
+		29CEE22D1B098273007F07C2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE22C1B098273007F07C2 /* DetailViewController.m */; };
+		29CEE2301B098273007F07C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE22E1B098273007F07C2 /* Main.storyboard */; };
+		29CEE2321B098273007F07C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE2311B098273007F07C2 /* Images.xcassets */; };
+		29CEE2351B098273007F07C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE2331B098273007F07C2 /* LaunchScreen.xib */; };
+		29CEE2411B098274007F07C2 /* SinchAppToPhoneTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE2401B098274007F07C2 /* SinchAppToPhoneTutorialTests.m */; };
+		29CEE24C1B098BB1007F07C2 /* CContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE24B1B098BB1007F07C2 /* CContact.m */; };
+		8B450E78685C48B3A83A9A95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54259C134DD5355E7522BB8C /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29CEE23B1B098274007F07C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29CEE2161B098273007F07C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29CEE21D1B098273007F07C2;
+			remoteInfo = SinchAppToPhoneTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29CEE21E1B098273007F07C2 /* SinchAppToPhoneTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinchAppToPhoneTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29CEE2221B098273007F07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29CEE2231B098273007F07C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29CEE2251B098273007F07C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29CEE2261B098273007F07C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29CEE2281B098273007F07C2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		29CEE2291B098273007F07C2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		29CEE22B1B098273007F07C2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		29CEE22C1B098273007F07C2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		29CEE22F1B098273007F07C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29CEE2311B098273007F07C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29CEE2341B098273007F07C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		29CEE23A1B098274007F07C2 /* SinchAppToPhoneTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinchAppToPhoneTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29CEE23F1B098274007F07C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29CEE2401B098274007F07C2 /* SinchAppToPhoneTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinchAppToPhoneTutorialTests.m; sourceTree = "<group>"; };
+		29CEE24A1B098BB1007F07C2 /* CContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CContact.h; sourceTree = "<group>"; };
+		29CEE24B1B098BB1007F07C2 /* CContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CContact.m; sourceTree = "<group>"; };
+		31012C0AAB61904A22119DD8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		54259C134DD5355E7522BB8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63D456F3F720C7270F3CFE0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29CEE21B1B098273007F07C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B450E78685C48B3A83A9A95 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE2371B098274007F07C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29CEE2151B098273007F07C2 = {
+			isa = PBXGroup;
+			children = (
+				29CEE2201B098273007F07C2 /* SinchAppToPhoneTutorial */,
+				29CEE23D1B098274007F07C2 /* SinchAppToPhoneTutorialTests */,
+				29CEE21F1B098273007F07C2 /* Products */,
+				614C7D687608D10DDDC2C75A /* Pods */,
+				69E02C9BC00D9AD13DA18602 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29CEE21F1B098273007F07C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE21E1B098273007F07C2 /* SinchAppToPhoneTutorial.app */,
+				29CEE23A1B098274007F07C2 /* SinchAppToPhoneTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29CEE2201B098273007F07C2 /* SinchAppToPhoneTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE2251B098273007F07C2 /* AppDelegate.h */,
+				29CEE2261B098273007F07C2 /* AppDelegate.m */,
+				29CEE2281B098273007F07C2 /* MasterViewController.h */,
+				29CEE2291B098273007F07C2 /* MasterViewController.m */,
+				29CEE24A1B098BB1007F07C2 /* CContact.h */,
+				29CEE24B1B098BB1007F07C2 /* CContact.m */,
+				29CEE22B1B098273007F07C2 /* DetailViewController.h */,
+				29CEE22C1B098273007F07C2 /* DetailViewController.m */,
+				29CEE22E1B098273007F07C2 /* Main.storyboard */,
+				29CEE2311B098273007F07C2 /* Images.xcassets */,
+				29CEE2331B098273007F07C2 /* LaunchScreen.xib */,
+				29CEE2211B098273007F07C2 /* Supporting Files */,
+			);
+			path = SinchAppToPhoneTutorial;
+			sourceTree = "<group>";
+		};
+		29CEE2211B098273007F07C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE2221B098273007F07C2 /* Info.plist */,
+				29CEE2231B098273007F07C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29CEE23D1B098274007F07C2 /* SinchAppToPhoneTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE2401B098274007F07C2 /* SinchAppToPhoneTutorialTests.m */,
+				29CEE23E1B098274007F07C2 /* Supporting Files */,
+			);
+			path = SinchAppToPhoneTutorialTests;
+			sourceTree = "<group>";
+		};
+		29CEE23E1B098274007F07C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29CEE23F1B098274007F07C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		614C7D687608D10DDDC2C75A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31012C0AAB61904A22119DD8 /* Pods.debug.xcconfig */,
+				A63D456F3F720C7270F3CFE0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69E02C9BC00D9AD13DA18602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54259C134DD5355E7522BB8C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29CEE21D1B098273007F07C2 /* SinchAppToPhoneTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29CEE2441B098274007F07C2 /* Build configuration list for PBXNativeTarget "SinchAppToPhoneTutorial" */;
+			buildPhases = (
+				3E6731D3A5D66413E1583506 /* Check Pods Manifest.lock */,
+				29CEE21A1B098273007F07C2 /* Sources */,
+				29CEE21B1B098273007F07C2 /* Frameworks */,
+				29CEE21C1B098273007F07C2 /* Resources */,
+				18365F0FF170EDC8F32FC68B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinchAppToPhoneTutorial;
+			productName = SinchAppToPhoneTutorial;
+			productReference = 29CEE21E1B098273007F07C2 /* SinchAppToPhoneTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29CEE2391B098274007F07C2 /* SinchAppToPhoneTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29CEE2471B098274007F07C2 /* Build configuration list for PBXNativeTarget "SinchAppToPhoneTutorialTests" */;
+			buildPhases = (
+				29CEE2361B098274007F07C2 /* Sources */,
+				29CEE2371B098274007F07C2 /* Frameworks */,
+				29CEE2381B098274007F07C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29CEE23C1B098274007F07C2 /* PBXTargetDependency */,
+			);
+			name = SinchAppToPhoneTutorialTests;
+			productName = SinchAppToPhoneTutorialTests;
+			productReference = 29CEE23A1B098274007F07C2 /* SinchAppToPhoneTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29CEE2161B098273007F07C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ali Minty";
+				TargetAttributes = {
+					29CEE21D1B098273007F07C2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					29CEE2391B098274007F07C2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 29CEE21D1B098273007F07C2;
+					};
+				};
+			};
+			buildConfigurationList = 29CEE2191B098273007F07C2 /* Build configuration list for PBXProject "SinchAppToPhoneTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29CEE2151B098273007F07C2;
+			productRefGroup = 29CEE21F1B098273007F07C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29CEE21D1B098273007F07C2 /* SinchAppToPhoneTutorial */,
+				29CEE2391B098274007F07C2 /* SinchAppToPhoneTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29CEE21C1B098273007F07C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CEE2301B098273007F07C2 /* Main.storyboard in Resources */,
+				29CEE2351B098273007F07C2 /* LaunchScreen.xib in Resources */,
+				29CEE2321B098273007F07C2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE2381B098274007F07C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18365F0FF170EDC8F32FC68B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6731D3A5D66413E1583506 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29CEE21A1B098273007F07C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CEE2271B098273007F07C2 /* AppDelegate.m in Sources */,
+				29CEE22A1B098273007F07C2 /* MasterViewController.m in Sources */,
+				29CEE2241B098273007F07C2 /* main.m in Sources */,
+				29CEE24C1B098BB1007F07C2 /* CContact.m in Sources */,
+				29CEE22D1B098273007F07C2 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CEE2361B098274007F07C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CEE2411B098274007F07C2 /* SinchAppToPhoneTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29CEE23C1B098274007F07C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29CEE21D1B098273007F07C2 /* SinchAppToPhoneTutorial */;
+			targetProxy = 29CEE23B1B098274007F07C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29CEE22E1B098273007F07C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29CEE22F1B098273007F07C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29CEE2331B098273007F07C2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29CEE2341B098273007F07C2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29CEE2421B098274007F07C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29CEE2431B098274007F07C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29CEE2451B098274007F07C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31012C0AAB61904A22119DD8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SinchAppToPhoneTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29CEE2461B098274007F07C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A63D456F3F720C7270F3CFE0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SinchAppToPhoneTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		29CEE2481B098274007F07C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SinchAppToPhoneTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinchAppToPhoneTutorial.app/SinchAppToPhoneTutorial";
+			};
+			name = Debug;
+		};
+		29CEE2491B098274007F07C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SinchAppToPhoneTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinchAppToPhoneTutorial.app/SinchAppToPhoneTutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29CEE2191B098273007F07C2 /* Build configuration list for PBXProject "SinchAppToPhoneTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29CEE2421B098274007F07C2 /* Debug */,
+				29CEE2431B098274007F07C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29CEE2441B098274007F07C2 /* Build configuration list for PBXNativeTarget "SinchAppToPhoneTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29CEE2451B098274007F07C2 /* Debug */,
+				29CEE2461B098274007F07C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29CEE2471B098274007F07C2 /* Build configuration list for PBXNativeTarget "SinchAppToPhoneTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29CEE2481B098274007F07C2 /* Debug */,
+				29CEE2491B098274007F07C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29CEE2161B098273007F07C2 /* Project object */;
+}

@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7487063990C5101FEEC96B /* Pods-SinchAppToPhoneTutorial-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 057F29BB0E1B649E9E869D58 /* Pods-SinchAppToPhoneTutorial-dummy.m */; };
+		7976C55990C11200ED4ACCD6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77464FCF86CA4A4F39490F06 /* Pods-dummy.m */; };
+		A135E96435D9A4D97B89D98A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEACAEF818E40098EABA1E /* Foundation.framework */; };
+		D80F431D8D593EB0F46A2DC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEACAEF818E40098EABA1E /* Foundation.framework */; };
+		D82BFE5A5484FAB601A088AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEACAEF818E40098EABA1E /* Foundation.framework */; };
+		EB8092D124FB64D0C6A6BCEA /* Pods-SinchAppToPhoneTutorialTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E160B6274A9F8A9D49C3E604 /* Pods-SinchAppToPhoneTutorialTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		057F29BB0E1B649E9E869D58 /* Pods-SinchAppToPhoneTutorial-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SinchAppToPhoneTutorial-dummy.m"; sourceTree = "<group>"; };
+		06E1AB8C23C21BC2BD73EE3B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		073160FB88DFAF2678FE6472 /* Pods-SinchAppToPhoneTutorialTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SinchAppToPhoneTutorialTests-environment.h"; sourceTree = "<group>"; };
+		097FF23B53804462CE326676 /* Pods-SinchAppToPhoneTutorial-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SinchAppToPhoneTutorial-resources.sh"; sourceTree = "<group>"; };
+		20D529F56B2141C69207B532 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		2A826B88A69BE297072A358E /* libPods-SinchAppToPhoneTutorialTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinchAppToPhoneTutorialTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAB0E33EE0517DCD6F35CD3 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		338D30204ED55605C383E667 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39C3BB636C3C02C17B331234 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		3AB26CFC3EC296F5EB42BB4C /* Pods-SinchAppToPhoneTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SinchAppToPhoneTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
+		4036E1E8D20C25A8D9219D6D /* Pods-SinchAppToPhoneTutorialTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SinchAppToPhoneTutorialTests-resources.sh"; sourceTree = "<group>"; };
+		772F6D3BF5AB2CC9E1614F42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		77464FCF86CA4A4F39490F06 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8E1EA3BF9B189FCECF2627DA /* Pods-SinchAppToPhoneTutorialTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SinchAppToPhoneTutorialTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94301EB73E6B6318A8674349 /* libPods-SinchAppToPhoneTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinchAppToPhoneTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		971AD0376DB589B745E70570 /* Pods-SinchAppToPhoneTutorial-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SinchAppToPhoneTutorial-environment.h"; sourceTree = "<group>"; };
+		99C1382890CF16AEA76A28C4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A37FE556F3CD86985A4E1D6F /* Pods-SinchAppToPhoneTutorialTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SinchAppToPhoneTutorialTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B5AEACAEF818E40098EABA1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B6A0E2FA045E159F5B5DF14A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF771E4187F98DC8E542727 /* Pods-SinchAppToPhoneTutorial-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SinchAppToPhoneTutorial-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEA75A9319B54B36879E1AC5 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		D2EC7E5BF282429F2F11A8EE /* Pods-SinchAppToPhoneTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SinchAppToPhoneTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E160B6274A9F8A9D49C3E604 /* Pods-SinchAppToPhoneTutorialTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SinchAppToPhoneTutorialTests-dummy.m"; sourceTree = "<group>"; };
+		E275FB52D1081F3CB247516A /* Pods-SinchAppToPhoneTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SinchAppToPhoneTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		FAAA7554B0E7F1A1518BA1E2 /* Pods-SinchAppToPhoneTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SinchAppToPhoneTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		FF238B09101ECDA1315ED617 /* Pods-SinchAppToPhoneTutorial-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SinchAppToPhoneTutorial-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B1CA9E066C74D88DD0B33CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A135E96435D9A4D97B89D98A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E92F45429E53AEA368A1815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82BFE5A5484FAB601A088AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC92AB0C196D2CB9C4F0CDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80F431D8D593EB0F46A2DC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0095096CC5EDF92A2737D066 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				338D30204ED55605C383E667 /* Pods-acknowledgements.markdown */,
+				2DAB0E33EE0517DCD6F35CD3 /* Pods-acknowledgements.plist */,
+				77464FCF86CA4A4F39490F06 /* Pods-dummy.m */,
+				CEA75A9319B54B36879E1AC5 /* Pods-environment.h */,
+				20D529F56B2141C69207B532 /* Pods-resources.sh */,
+				772F6D3BF5AB2CC9E1614F42 /* Pods.debug.xcconfig */,
+				99C1382890CF16AEA76A28C4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		4C20BC76E46D614E14342A81 = {
+			isa = PBXGroup;
+			children = (
+				06E1AB8C23C21BC2BD73EE3B /* Podfile */,
+				BDF0AA2F3DB05B9EF83A0F08 /* Frameworks */,
+				D4570CE267B41BAF38C6B07B /* Pods */,
+				53AD85C821D7499AB990C7ED /* Products */,
+				9808F1123FF87651BACCFB3E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		512E84CD4FD0ACB7C42E38B0 /* Pods-SinchAppToPhoneTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BFF771E4187F98DC8E542727 /* Pods-SinchAppToPhoneTutorial-acknowledgements.markdown */,
+				FF238B09101ECDA1315ED617 /* Pods-SinchAppToPhoneTutorial-acknowledgements.plist */,
+				057F29BB0E1B649E9E869D58 /* Pods-SinchAppToPhoneTutorial-dummy.m */,
+				971AD0376DB589B745E70570 /* Pods-SinchAppToPhoneTutorial-environment.h */,
+				097FF23B53804462CE326676 /* Pods-SinchAppToPhoneTutorial-resources.sh */,
+				E275FB52D1081F3CB247516A /* Pods-SinchAppToPhoneTutorial.debug.xcconfig */,
+				FAAA7554B0E7F1A1518BA1E2 /* Pods-SinchAppToPhoneTutorial.release.xcconfig */,
+			);
+			name = "Pods-SinchAppToPhoneTutorial";
+			path = "Target Support Files/Pods-SinchAppToPhoneTutorial";
+			sourceTree = "<group>";
+		};
+		53AD85C821D7499AB990C7ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A0E2FA045E159F5B5DF14A /* libPods.a */,
+				94301EB73E6B6318A8674349 /* libPods-SinchAppToPhoneTutorial.a */,
+				2A826B88A69BE297072A358E /* libPods-SinchAppToPhoneTutorialTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69F4B0D515FCCA2A4FB1778E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5AEACAEF818E40098EABA1E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		84AE60C31E559160E6C986C5 /* Pods-SinchAppToPhoneTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				A37FE556F3CD86985A4E1D6F /* Pods-SinchAppToPhoneTutorialTests-acknowledgements.markdown */,
+				8E1EA3BF9B189FCECF2627DA /* Pods-SinchAppToPhoneTutorialTests-acknowledgements.plist */,
+				E160B6274A9F8A9D49C3E604 /* Pods-SinchAppToPhoneTutorialTests-dummy.m */,
+				073160FB88DFAF2678FE6472 /* Pods-SinchAppToPhoneTutorialTests-environment.h */,
+				4036E1E8D20C25A8D9219D6D /* Pods-SinchAppToPhoneTutorialTests-resources.sh */,
+				D2EC7E5BF282429F2F11A8EE /* Pods-SinchAppToPhoneTutorialTests.debug.xcconfig */,
+				3AB26CFC3EC296F5EB42BB4C /* Pods-SinchAppToPhoneTutorialTests.release.xcconfig */,
+			);
+			name = "Pods-SinchAppToPhoneTutorialTests";
+			path = "Target Support Files/Pods-SinchAppToPhoneTutorialTests";
+			sourceTree = "<group>";
+		};
+		9808F1123FF87651BACCFB3E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0095096CC5EDF92A2737D066 /* Pods */,
+				512E84CD4FD0ACB7C42E38B0 /* Pods-SinchAppToPhoneTutorial */,
+				84AE60C31E559160E6C986C5 /* Pods-SinchAppToPhoneTutorialTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BDF0AA2F3DB05B9EF83A0F08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69F4B0D515FCCA2A4FB1778E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4570CE267B41BAF38C6B07B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8D89CB7A9655307CE933702 /* SinchRTC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA3C6E64FA5DE24497335976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39C3BB636C3C02C17B331234 /* Sinch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8D89CB7A9655307CE933702 /* SinchRTC */ = {
+			isa = PBXGroup;
+			children = (
+				DA3C6E64FA5DE24497335976 /* Frameworks */,
+			);
+			path = SinchRTC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00A4E66C03F0BB0F4DF81425 /* Pods-SinchAppToPhoneTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5E75C16B62120AD29C1D39 /* Build configuration list for PBXNativeTarget "Pods-SinchAppToPhoneTutorial" */;
+			buildPhases = (
+				305909FEF57A7213B10F8D75 /* Sources */,
+				2B1CA9E066C74D88DD0B33CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SinchAppToPhoneTutorial";
+			productName = "Pods-SinchAppToPhoneTutorial";
+			productReference = 94301EB73E6B6318A8674349 /* libPods-SinchAppToPhoneTutorial.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		03CCB378EDF1A9CB3E6A004D /* Pods-SinchAppToPhoneTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16071A2143A869F812DF2B06 /* Build configuration list for PBXNativeTarget "Pods-SinchAppToPhoneTutorialTests" */;
+			buildPhases = (
+				5170B5D5A928B4D10866E3AC /* Sources */,
+				7E92F45429E53AEA368A1815 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SinchAppToPhoneTutorialTests";
+			productName = "Pods-SinchAppToPhoneTutorialTests";
+			productReference = 2A826B88A69BE297072A358E /* libPods-SinchAppToPhoneTutorialTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FDB9DE03DE5C87652C6B0DD5 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413217509405D2DB26B9B3ED /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				004921A40B90A2CEBF857087 /* Sources */,
+				CC92AB0C196D2CB9C4F0CDA7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = B6A0E2FA045E159F5B5DF14A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9877BDDC824FF57537A23AEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 4A0332489966C810B22028CB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C20BC76E46D614E14342A81;
+			productRefGroup = 53AD85C821D7499AB990C7ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB9DE03DE5C87652C6B0DD5 /* Pods */,
+				00A4E66C03F0BB0F4DF81425 /* Pods-SinchAppToPhoneTutorial */,
+				03CCB378EDF1A9CB3E6A004D /* Pods-SinchAppToPhoneTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004921A40B90A2CEBF857087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7976C55990C11200ED4ACCD6 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305909FEF57A7213B10F8D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7487063990C5101FEEC96B /* Pods-SinchAppToPhoneTutorial-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5170B5D5A928B4D10866E3AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8092D124FB64D0C6A6BCEA /* Pods-SinchAppToPhoneTutorialTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42E2FDECA9EA87770C9D7E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45797832B776A3FF7D01CD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772F6D3BF5AB2CC9E1614F42 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72BEB9BE137F39F73C057D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C1382890CF16AEA76A28C4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7B69035F9E46A4B0987B6186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB26CFC3EC296F5EB42BB4C /* Pods-SinchAppToPhoneTutorialTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C163938BE58BFFB484AD2EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAA7554B0E7F1A1518BA1E2 /* Pods-SinchAppToPhoneTutorial.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C477B4D5FA212759C9899CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2EC7E5BF282429F2F11A8EE /* Pods-SinchAppToPhoneTutorialTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC591F9795D08AB99B46563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FE294ACCDECCFD4F847B9A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E275FB52D1081F3CB247516A /* Pods-SinchAppToPhoneTutorial.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16071A2143A869F812DF2B06 /* Build configuration list for PBXNativeTarget "Pods-SinchAppToPhoneTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C477B4D5FA212759C9899CED /* Debug */,
+				7B69035F9E46A4B0987B6186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413217509405D2DB26B9B3ED /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45797832B776A3FF7D01CD4B /* Debug */,
+				72BEB9BE137F39F73C057D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0332489966C810B22028CB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC591F9795D08AB99B46563A /* Debug */,
+				42E2FDECA9EA87770C9D7E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5E75C16B62120AD29C1D39 /* Build configuration list for PBXNativeTarget "Pods-SinchAppToPhoneTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE294ACCDECCFD4F847B9A36 /* Debug */,
+				C163938BE58BFFB484AD2EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9877BDDC824FF57537A23AEF /* Project object */;
+}
