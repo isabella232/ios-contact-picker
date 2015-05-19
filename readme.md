@@ -1,6 +1,8 @@
 # iOS Contact Picker
 By Ali Minty
 
+![Alt text](/img/App-Screen.png)
+
 In this tutorial, we will be creating a contacts app for iOS that uses the Sinch SDK to make app-to-phone calls. To get the most out of this tutorial, you will need a basic understanding of the following areas:
 
 * XCode and Storyboard
