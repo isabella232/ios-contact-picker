@@ -253,11 +253,11 @@ Select the Table View by clicking on it. Then go to Editor>Pin and select “Bot
 
 Do this for “Top Space to Superview”, “Trailing Space to Superview”, and “Leading Space to Superview”. Remember to select the Table View before adding each pin. If done correctly, you’ll get a nice blue outline around your Table View, indicating that your Auto Layout pins were placed properly.
 
-![auto layout](img/autolayout.png)
+![address book auto layout](img/autolayout.png)
 
 Then, add a Table View Cell to the Table View
 
-![table cell](img/Table-Cell.png)
+![ios address book table cell](img/Table-Cell.png)
 
 Now, switch to the Assistant Editor and have your right pane display **DetailViewController.h**. Go ahead and delete the detailDiscriptionLabel. Hold down control and click and drag from the Table View to your interface to add a UITableView property. We’re going to display the selected contact’s numbers here, so give the table an appropriate name, such as numberTable.
 
@@ -451,5 +451,3 @@ Try it out! If you’re using the iOS Simulator, add a number that you can test 
 # 6. What Now?
 
 You now have a fully functional [app-to-phone calling]( https://www.sinch.com/products/voice-api/app-to-phone-calling/) app that uses the Sinch SDK. You can also add more features to your app. Sinch offers a number of other services, such as SMS and app-to-app calling, which are simple to implement in your app. 
-
-Thanks to Ali Minty for this tutorial.
