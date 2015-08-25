@@ -7,7 +7,7 @@ In this tutorial, we will be creating a contacts app for iOS that uses the Sinch
 * Address Book API
 * CocoaPods
 
-You’ll also want a phone close by for later in the tutorial, when we test our app out.
+You’ll also want a phone close by for testing later in the tutorial.
 
 At the end of the tutorial, you will have something that looks a bit like this:
 
@@ -15,15 +15,15 @@ At the end of the tutorial, you will have something that looks a bit like this:
 
 # 1. Setup
 
-Open up XCode and create a new project using the Master-Detail Application template. This template will give us a nice base to start with, as it already has some of the components we need. Make sure that you choose Objective-C under language, and iPhone under device. 
+Open up XCode and create a new project using the Master-Detail Application template. This template will give us a nice base to start with, as it already has some of the components we need. Make sure that you choose Objective-C under language and iPhone under device. 
 
-Next, we’ll want to set up CocoaPods to work with our app. Open the directory for the project you just created in Terminal, and type:
+We’ll want to set up CocoaPods to work with our app. Open the directory for the project you just created in Terminal and type:
 
 ```
 pod init
 ```
 
-Then, open the file named Podfile and add the following line:
+Then open the file named Podfile and add the following line:
 
 ```
 pod ‘SinchRTC’
@@ -35,15 +35,15 @@ After saving the file, install all the tools you will need by simply typing:
 pod install
 ```
 
-After this, you’ll see an XCode workspace file with the extension “**.xcworkspace**”. We’ll need to work out of that file from now on instead of our project file. That way, all of our app’s components will work together in harmony.
+After this, you’ll see an XCode workspace file with the extension “**.xcworkspace**”. We’ll need to work out of that file from now on instead of our project file. That way, all of our app’s components will work together.
 
-If you aren’t familiar with the default Master-Detail Application template, build and run to play around with the app. You can see that we populate a table using the plus button, and can select an entry to see a detailed view.
+If you aren’t familiar with the default Master-Detail Application template, build and run to play around with the app. You can see that we populate a table using the plus button and can select an entry to see a detailed view.
 
-To get an idea of what we’re aiming for, we want our app to pre-populate the table with contacts using the Address Book API. After that, we should be able to select an entry to see that contact’s phone number(s) that we can then select to make a call.
+To get an idea of what we’re aiming for, we want our app to pre-populate the table with contacts using the Address Book API. After that, we should be able to select an entry to see that contact’s phone number(s), which we can then select to make a call.
 
-Ok, enough of that. Time to get to the code!
+Ok, time to get to the code!
 
-# 2. Working with Contacts
+# 2. Working with contacts
 
 First, go to **MasterViewController.h** and add the Address Book import statement:
 
@@ -51,13 +51,13 @@ First, go to **MasterViewController.h** and add the Address Book import statemen
 #import <AddressBook/AddressBook.h>
 ```
 
-Now, head over to **MasterViewController.m**. First, delete the method **insertNewObject**. Then, add the following method:
+Now, head over to **MasterViewController.m**. Delete the method **insertNewObject** and add the following method:
 
 ```objective-c
 - (void)fillContacts {}
 ```
 
-Now go to **viewDidLoad**. We first want to check if we can access the users contacts. If so, we can call fillContacts to populate our table. Delete all the code in `viewDidLoad` except for `[super viewDidLoad]` and add the following code at the end:
+Now go to **viewDidLoad**. We first want to check if we can access the user’s contacts. If so, we can call fillContacts to populate our table. Delete all the code in `viewDidLoad` except for `[super viewDidLoad]` and add the following code at the end:
 
 ```objective-c
 if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusDenied ||
@@ -81,7 +81,7 @@ if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusDenied ||
     }
 ```
 
-Here, we see if our app can use the user’s contacts. If not, we let the user know. If so, we go ahead and call **fillContacts**. If the user hasn’t specified whether our not our app has permission to use his or her contacts, we ask them and respond appropriately. 
+Here we see if our app can use the user’s contacts. If not, we let the user know. If so, we go ahead and call **fillContacts**. If the user hasn’t specified whether or not our app has permission to use his or her contacts, we ask them and respond appropriately. 
 
 Now we need a way to store contact information. To do this, go to File>New>File... and create a new Cocoa Touch Class. I always prepend my class names with a “C”, so I’ll name the class “**CContact**” since we want a class to hold contact information. Make sure the subclass is NSObject, the language Objective-C.
 
@@ -113,29 +113,29 @@ Now go to **CContact.m** and implement the class method that we just declared:
 }
 ```
 
-Ok, we’re done setting up our contact class. Now, lets go to **MasterViewController.m** to use it. First import **CContact.h** at the top:
+Ok, we’re done setting up our contact class. Now let's go to **MasterViewController.m** to use it. First, import **CContact.h** at the top:
 
 ```objective-c
 #import "CContact.h"
 ```
 
-We want each cell in our UITableView to correspond to a **CContact** object, so first go to **tableView:cellForRowAtIndexPath**. You’ll see these lines of code:
+We want each cell in our UITableView to correspond to a **CContact** object, so go to **tableView:cellForRowAtIndexPath**. You’ll see these lines of code:
 
 ```objective-c
 NSDate *object = self.objects[indexPath.row];
 cell.textLabel.text = [object description];
 ```
 
-Not quite what we want. Change them to look like this:
+That’s not quite what we want. Change them to look like this:
 
 ```objective-c
 CContact *object = self.objects[indexPath.row];
 cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [object firstName], [object lastName]];
 ```
 
-Now we’ll be able to properly display cells. Next, go to `prepareForSegue:sender` and replace **NSDate** with **CContact**.
+Now we’ll be able to properly display cells. Go to `prepareForSegue:sender` and replace **NSDate** with **CContact**.
 
-Time to move onto `fillContacts`. Let’s be a bit specific as to what information we want to keep track of. We’ll impose the following conditions
+Time to move on to `fillContacts`. Let’s be a bit specific as to what information we want to keep track of. We’ll impose the following conditions:
 
 * A contact must have at least one number
 * A contact’s number will be omitted if it is not a U.S. number
@@ -217,11 +217,11 @@ fName = (__bridge NSString *)ABRecordCopyValue(thisContact, kABPersonFirstNamePr
 		     // 2
 ```
 
-Wow, that’s a lot! Lets take a look at what we’ve just added. 
+Wow, that’s a lot! Let's take a look at what we’ve just added. 
 
-First we get our contact’s first and last names. We have to do a bit of work getting the values as strings, as they are given to us as **ABRecordRef** objects. We then enter a for-loop to look at all of our current contact’s phone numbers. We get the phone number and its label. 
+First we get our contact’s first and last name. We have to do a bit of work getting the values as strings, as they are given to us as **ABRecordRef** objects. We then enter a for-loop to look at all of our current contact’s phone numbers. We get the phone number and its label. 
 
-Next, we need to do a bit of manipulation to see if our number is a U.S. number. The number is given to us as it appears on the phone, so we’ll need to parse the number to get rid of any non-digit characters. We then check to see if the number is a U.S. number. If it is, then we can store the number depending on its label. Take note of the numberCount variable that we increment once we’ve added a number.
+Next, we need to do a bit of manipulation to see if our number is a U.S. number. The number is given to us as it appears on the phone, so we’ll need to parse the number to get rid of any non-digit characters. We then check to see if the number is a U.S. number. If it is, we can store it depending on its label. Take note of the numberCount variable that we increment once we’ve added a number.
 
 Now, replace the `// 2` comment with:
 
@@ -247,15 +247,15 @@ We’re done with **MasterViewController.m**. Build and run to see if you get a 
 
 Now go to **Main.storybaord**. First, change the title label in the Master view from “Master” to “Contacts”. Then, scroll to the right so you can see the Detail view. Delete the Label that’s currently there and add a Table View that fills the whole screen. We’re going to use Auto Layout to make sure our Table View’s position and size proportions stay constant between devices and phone orientations. 
 
-Select the Table View by clicking on it. Then go to Editor>Pin and select “Bottom Space to Superview”. 
+Select the Table View by clicking on it. Then go to Editor>Pin and select “Bottom Space to Superview.” 
 
 ![layout pins](img/autolayout-pins.png)
 
-Do this for “Top Space to Superview”, “Trailing Space to Superview”, and “Leading Space to Superview”. Remember to select the Table View before adding each pin. If done correctly, you’ll get a nice blue outline around your Table View, indicating that your Auto Layout pins were placed properly.
+Do this for “Top Space to Superview,” “Trailing Space to Superview,” and “Leading Space to Superview.” Remember to select the Table View before adding each pin. If done correctly, you’ll get a nice blue outline around your Table View, indicating that your Auto Layout pins were placed properly.
 
 ![address book auto layout](img/autolayout.png)
 
-Then, add a Table View Cell to the Table View
+Then, add a Table View Cell to the Table View:
 
 ![ios address book table cell](img/Table-Cell.png)
 
@@ -263,17 +263,17 @@ Now, switch to the Assistant Editor and have your right pane display **DetailVie
 
 ![add property](img/add-property.png)
 
-Do the same with the Detail title, which will be a UINavigationItem. Call it something descriptive, like contactTitle.
+Do the same with the Detail title, which will be a UINavigationItem. Call it something descriptive like contactTitle.
 
-# 4. Contact Details
+# 4. Contact details
 
-First, go to **DetailViewController.h** and import **CContact**. Then, change the interface line to read as follows:
+Go to **DetailViewController.h** and import **CContact**. Then, change the interface line to read as follows:
 
 ```objective-c
 @interface DetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 ```
 
-Now, go to **DetailViewController.m**, locate configureView, and replace its contents with:
+Now go to **DetailViewController.m**, locate configureView, and replace its contents with:
 
 ```objective-c
 if (self.detailItem) {
@@ -333,11 +333,11 @@ Add the following functions in order to specify our table’s layout:
 }
 ```
 
-Try building and running. You should find that we display our contact’s name at the top at the screen, as well as a table of their phone number(s).
+Try building and running. You should find that we display our contact’s name at the top of the screen, as well as a table of his or her phone number(s).
 
-# 5. Making Calls
+# 5. Making calls
 
-We’ll want to make a call once we select a person’s phone number. If you haven’t already, go to sinch.com and sign up for free. Then, go to your dashboard and go to your apps. Create a new sandbox app. Take note of you app’s unique key and secret. 
+We’ll want to make a call once we select a person’s phone number. If you haven’t already, go to [sinch.com](www.sinch.com) and sign up for free. Then, go to your dashboard and go to your apps. Create a new sandbox app. Take note of your app’s unique key and secret. 
 
 Go to **DetailVieController.h** and add the following import statement:
 
@@ -376,7 +376,7 @@ We’ll only need to use these variables to make a call using the Sinch SDK. Nex
 }
 ```
 
-Here, we simply set up the Sinch client. This is where you need to put your app key and secret that you took note of earlier. Call this method in viewDidLoad by adding:
+Here we simply set up the Sinch client. This is where you need to put your app key and secret that you took note of earlier. Call this method in viewDidLoad by adding:
 
 ```objective-c
 [self initSinchClient];
@@ -448,6 +448,6 @@ Finally, let’s make the alert view’s cancel button hang up the call. Impleme
 
 Try it out! If you’re using the iOS Simulator, add a number that you can test through the system’s contacts app.
 
-# 6. What Now?
+# 6. What now?
 
-You now have a fully functional [app-to-phone calling]( https://www.sinch.com/products/voice-api/app-to-phone-calling/) app that uses the Sinch SDK. You can also add more features to your app. Sinch offers a number of other services, such as SMS and app-to-app calling, which are simple to implement in your app. 
+You now have a fully functional [app-to-phone calling]( https://www.sinch.com/products/voice-api/app-to-phone-calling/) app that uses the Sinch SDK. You can also add more features to your app; Sinch offers a number of other services, such as SMS and app-to-app calling, which are simple to implement in your app. 
