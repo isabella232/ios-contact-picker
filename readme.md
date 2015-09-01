@@ -337,7 +337,7 @@ Try building and running. You should find that we display our contact’s name a
 
 # 5. Making calls
 
-We’ll want to make a call once we select a person’s phone number. If you haven’t already, go to [sinch.com](www.sinch.com) and sign up for free. Then, go to your dashboard and go to your apps. Create a new sandbox app. Take note of your app’s unique key and secret. 
+We’ll want to make a call once we select a person’s phone number. If you haven’t already, go to [sinch.com](https://www.sinch.com/) and sign up for free. Then, go to your dashboard and go to your apps. Create a new sandbox app. Take note of your app’s unique key and secret. 
 
 Go to **DetailVieController.h** and add the following import statement:
 
